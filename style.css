@@ -1,0 +1,17 @@
+
+.sec_black {background: #000;}
+.sec_visual img {max-width: 100%}
+.iw_component.tCenter {text-align: center}
+
+@media only screen and (max-device-width: 767px) {
+    .sec_visual {padding-top: 39px;}
+    .sec_visual .onW {display: none !important;}
+    .sec_visual .title .sub {color: #a2a2a2; font-size: 3.888vw; margin-bottom: 16px; font-weight: bold}
+    .sec_visual .title .strong {color: #000; font-size: 6.112vw; margin-bottom: 32px; font-weight: bold}
+    .sec_visual .desc {color: #141414; font-size: 3.6111vw; margin: 0 25px 52px; line-height: 1.7; word-break: keep-all;}
+    .sec_top {padding-top: 76px;}
+    .sec_unnano .title {position: relative; bottom: -90px;}
+}
+
+.sec_black .title .sub {color: #898989}
+.sec_black .title .strong {color: #fff}
