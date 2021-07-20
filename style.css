@@ -5,6 +5,7 @@
 
 .responsive.sec_tone {max-width: 1600px; margin: 0 auto; position: relative;}
 .responsive.sec_tone img {max-width: 100%}
+.responsive.sec_tone video {width: 100%; max-height: 900px}
 
 .responsive.sec_tone .f_white {color: #fff!important;}
 .responsive.sec_tone .list_star {font-size: 14px; color: #888;}
@@ -37,6 +38,7 @@
 @media only screen and (min-width: 768px) {
     .responsive .col_half {display: table-cell;width: 50%;vertical-align: middle;}
     .responsive .col_half.right {padding-left: 80px;}
+    .responsive video.mobile {display: none}
     .responsive.usp_0201 {padding-bottom: 69px;}
     .responsive[class*="usp_"] .col_half:not(.right) {padding-left: 100px;}
     .responsive[class*="usp_"].usp_0204 .col_half:not(.right) {padding-left: 0;}
@@ -83,7 +85,7 @@
 @media only screen and (max-width: 767px) {
 
 
-
+    .responsive video.pc {display: none}
     .responsive.sec_tone .img_full img {width: 100%}
     .responsive.sec_tone * {word-break: keep-all;}
     .responsive.sec_tone .m_show {display: block;}

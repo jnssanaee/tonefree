@@ -51,9 +51,20 @@
             <div class="iw_columns col-lg-12" id="colkhn3wr5g">
                 <div class="iw_placeholder" id="iw_placeholder1605685870705">
                     <!-- start -->
-                    <div class="iw_component" hidden>
-                        <scction class="responsive sec_video">
-                            <img src="./images/img_dummy.png" alt="">
+                    <div class="iw_component">
+                        <scction class="responsive sec_video sec_tone">
+                                <video autoplay="" muted="" loop="" class="pc" playsinline="true" style="background-color: rgb(0, 0, 0);">
+                                    <source src="https://www.lge.co.kr/kr/images/smartphones/md08046020/usp/usp-MD08046020-18-c32-mp4.mp4" type="video/mp4">
+                                </video>
+
+                            <video autoplay="" muted="" loop="" class="mobile" playsinline="true" style="background-color: rgb(0, 0, 0);">
+                                <source src="https://www.lge.co.kr/kr/images/smartphones/md08046020/usp/usp-MD08046020-1-c32-m-mp4.mp4" type="video/mp4">
+                            </video>
+
+
+<!--                            <video width="100%" height="100%" class="v_replay" muted="" autoplay="autoplay" playsinline="">-->
+<!--                                <source src="https://image5.lge.co.kr/uploads/product/media/2020/09/lmf100n.asktik/usp_0201.mp4" type="video/mp4">-->
+<!--                            </video>-->
                         </scction>
                     </div>
 
@@ -93,5 +104,41 @@
     </div>
 </div>
 
+<script>
+    $(document).ready(function() {
+        var scrollChk = true;
+        var idx = 0;
+        var len = $('.v_replay').length;
+
+        function isScrolledIntoView2($elem) {
+            var docViewTop = $(window).scrollTop(),
+                docViewBottom = docViewTop + $(window).height(),
+                elemTop = $elem.offset().top,
+                elemBottom = elemTop + $elem.height();
+            return ((elemTop + ((elemBottom - elemTop) / 2)) >= docViewTop && ((elemTop + ((elemBottom - elemTop) / 2)) <= docViewBottom));
+        }
+        var scrollHandler2 = function() {
+            if (idx <= len) {
+                $('.v_replay').each(function(index) {
+                    var chk = isScrolledIntoView2($(this));
+                    var classChk = $(this).hasClass('on');
+                    if (chk) {
+                        if (!(classChk)) {
+                            $(this).get(0).play();
+                            $(this).addClass('on');
+                            idx++;
+                        }
+                    } else {
+                        $(this).get(0).pause();
+                        $(this).removeClass('on');
+                        idx--;
+                    }
+                })
+            }
+        };
+        $(window).scroll(scrollHandler2);
+    });
+
+</script>
 </body>
 </html>
