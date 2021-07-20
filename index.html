@@ -52,19 +52,27 @@
                 <div class="iw_placeholder" id="iw_placeholder1605685870705">
                     <!-- start -->
                     <div class="iw_component">
-                        <scction class="responsive sec_video sec_tone">
-                                <video autoplay="" muted="" loop="" class="pc" playsinline="true" style="background-color: rgb(0, 0, 0);">
+                        <scction class="responsive usp_0105 sec_video sec_tone">
+                            <div class="wrap_video">
+                                <video autoplay="" muted="" loop="" class="pc" playsinline="true" style="background: #000;">
                                     <source src="https://www.lge.co.kr/kr/images/smartphones/md08046020/usp/usp-MD08046020-18-c32-mp4.mp4" type="video/mp4">
                                 </video>
 
-                            <video autoplay="" muted="" loop="" class="mobile" playsinline="true" style="background-color: rgb(0, 0, 0);">
-                                <source src="https://www.lge.co.kr/kr/images/smartphones/md08046020/usp/usp-MD08046020-1-c32-m-mp4.mp4" type="video/mp4">
-                            </video>
+                                <video autoplay="" muted="" loop="" class="mobile" playsinline="true">
+                                    <source src="https://www.lge.co.kr/kr/images/smartphones/md08046020/usp/usp-MD08046020-1-c32-m-mp4.mp4" type="video/mp4">
+                                </video>
+                                <a href="javascript:;" data-modal-id="layer_set" class="btn_set" aria-label="톤프리 앱으로 설정해보기"></a>
 
-
-<!--                            <video width="100%" height="100%" class="v_replay" muted="" autoplay="autoplay" playsinline="">-->
-<!--                                <source src="https://image5.lge.co.kr/uploads/product/media/2020/09/lmf100n.asktik/usp_0201.mp4" type="video/mp4">-->
-<!--                            </video>-->
+                                <div class="layer_set" id="layer_set" data-modal>
+                                    <picture class="mediaImg">
+                                        <source media="(max-width: 767px)" srcset="./images/img_pop_set_m.png">
+                                        <img alt="" src="./images/img_pop_set.png">
+                                    </picture>
+                                    <button type="button" class="btn_close btn_layer_close">
+                                        <img alt="닫기" src="./images/btn_layer_close.png">
+                                    </button>
+                                </div>
+                            </div>
                         </scction>
                     </div>
 
@@ -94,7 +102,16 @@
                                 <source media="(max-width: 767px)" srcset="./images/img_usp_0204_m.png">
                                 <img alt="" src="./images/img_usp_0204.png">
                             </picture>
-                            <button type="button" class="btn_306" aria-label="306 플렉서블 이어젤의 비밀"></button>
+                            <a href="javascript:;" data-modal-id="layer_306" class="btn_306" aria-label="306 플렉서블 이어젤의 비밀"></a>
+
+                            <div class="layer_306" id="layer_306" data-modal>
+                                <picture class="mediaImg">
+                                    <source media="(max-width: 767px)" srcset="./images/img_pop_set_m.png">
+                                    <img alt="" src="./images/img_pop_306.png">
+                                </picture>
+                                <button type="button" class="btn_close btn_layer_close" aria-label="닫기"></button>
+                            </div>
+
                         </section>
                     </div>
                     <!-- //end -->
@@ -106,6 +123,19 @@
 
 <script>
     $(document).ready(function() {
+        const $layer_close = $('.btn_layer_close');
+
+        $('a[data-modal-id]').on('click', function (e) {
+            e.preventDefault();
+            // $layer_set.show();
+            const modalBox = $(this).attr('data-modal-id');
+            $("#" + modalBox).show();
+        });
+        $($layer_close).on('click', function () {
+            $(this).closest('[data-modal]').hide();
+        });
+
+
         var scrollChk = true;
         var idx = 0;
         var len = $('.v_replay').length;

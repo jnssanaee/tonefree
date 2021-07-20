@@ -36,12 +36,61 @@
 
 
 @media only screen and (min-width: 768px) {
-    .responsive .col_half {display: table-cell;width: 50%;vertical-align: middle;}
-    .responsive .col_half.right {padding-left: 80px;}
+    /*.responsive .col_half {display: table-cell;width: 50%;vertical-align: middle;}*/
+    /*.responsive .col_half.right {padding-left: 80px;}*/
+    /*.responsive[class*="usp_"] .col_half:not(.right) {padding-left: 100px;}*/
+    /*.responsive[class*="usp_"].usp_0204 .col_half:not(.right) {padding-left: 0;}*/
+
+
+    .responsive video {display: block;width: 100%;height: auto;}
     .responsive video.mobile {display: none}
-    .responsive.usp_0201 {padding-bottom: 69px;}
-    .responsive[class*="usp_"] .col_half:not(.right) {padding-left: 100px;}
-    .responsive[class*="usp_"].usp_0204 .col_half:not(.right) {padding-left: 0;}
+    .responsive .wrap_video {position: relative; max-width: 1600px; margin: 0 auto;}
+
+    .responsive.usp_0105 .btn_set {
+        position: absolute;
+        right: 26%;
+        bottom: 10%;
+        width: 18.625%;
+        height: 7.777777%;
+        background: red;
+        opacity: 0.5;
+        z-index: 10;
+    }
+
+    .layer_set {
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 2px;
+        z-index: 11;
+        transform: translateX(-50%);
+    }
+
+    .layer_set .btn_close {
+        position: absolute;
+        bottom: 38px;
+        left: 50%;
+        margin-left: 368px;
+    }
+
+    .layer_306 {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 11;
+    }
+
+    .layer_306 .btn_close {
+        position: absolute;
+        bottom: 26.7%;
+        left: 56.5%;
+        width: 11.2%;
+        height: 8%;
+        background: red;
+        opacity: 0.5;
+        z-index: 10;
+    }
 
     .responsive.usp_0202 .btn_certi {
         position: absolute;
@@ -67,8 +116,8 @@
 
     .responsive.usp_0204 .btn_306 {
         position: absolute;
-        right: 23%;
-        bottom: 7.333333%;
+        right: 23.1%;
+        bottom: 9.533333%;
         width: 18.625%;
         height: 7.777777%;
         background: red;
@@ -118,7 +167,7 @@
         left: 15.2777%;
         bottom: 0;
         width: 69.16666%;
-        height: 6.9468%;
+        height: 6.6468%;
         background: red;
         opacity: 0.5;
         z-index: 10;
@@ -145,6 +194,39 @@
         opacity: 0.5;
         z-index: 10;
     }
+
+    .responsive .wrap_video {position: relative; max-width: 1600px; margin: 0 auto;}
+
+    .responsive.usp_0105 .btn_set {
+        position: absolute;
+        right: 26%;
+        bottom: 10%;
+        width: 18.625%;
+        height: 7.777777%;
+        background: red;
+        opacity: 0.5;
+        z-index: 10;
+    }
+
+    .layer_set {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 11;
+    }
+
+    .layer_set .btn_close {
+        position: absolute;
+        right: 28.5%;
+        bottom: 2.1%;
+        width: 40.825%;
+        height: 9.2%;
+        background: red;
+        opacity: 0.5;
+        z-index: 10;
+    }
+    .layer_set .btn_close img {display: none}
 }
 
 .sec_black .title .sub {color: #898989}
