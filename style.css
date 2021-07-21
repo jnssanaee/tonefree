@@ -1,280 +1,45 @@
 
-.sec_black {background: #000;}
-.sec_video img, .sec_visual img {max-width: 100%}
-.iw_component.tCenter {text-align: center}
-
 .responsive.sec_tone {max-width: 1600px; margin: 0 auto; position: relative;}
 .responsive.sec_tone img {max-width: 100%}
-.responsive.sec_tone video {width: 100%; max-height: 900px}
-
-.responsive.sec_tone .f_white {color: #fff!important;}
-.responsive.sec_tone .list_star {font-size: 14px; color: #888;}
-.responsive.sec_tone .list_star li {text-indent: -6px;margin-left: 9px;word-break: keep-all;text-align: left; line-height: 1.7}
-.responsive.sec_tone .list_star li + li {margin-top: 2px;}
-.responsive.sec_tone .list_star li:before {content: "*";display: inline-block;margin: 0 5px 0 0;}
-.responsive.sec_tone .btn_bg_gray {
-    display: inline-block;
-    min-width: 300px;
-    min-height: 70px;
-    background: #666;
-    border: 4px solid #fff;
-    color:#fff;
-    border-radius: 300px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    position: relative; z-index: 10;
-}
-.responsive.sec_tone .m_show {display: none}
-
-.responsive .title h3 {color: #a2a2a2; font-size: 20px; margin-bottom: 30px; font-weight: 700}
-.responsive .title h4 {color: #fff; font-size: 32px; margin-bottom: 30px; font-weight: 700}
-.responsive .title .sub_title {color: #000; font-size: 40px; margin-bottom: 30px; font-weight: 700; line-height: 1.5}
-.responsive .sub_copy {color: #141414; font-size: 20px; line-height: 1.5; font-weight: 400;}
-.responsive.usp_0204 {background: #eff0f2}
-
-
+.responsive.sec_tone video {width: 100%;}
 
 @media only screen and (min-width: 768px) {
-    /*.responsive .col_half {display: table-cell;width: 50%;vertical-align: middle;}*/
-    /*.responsive .col_half.right {padding-left: 80px;}*/
-    /*.responsive[class*="usp_"] .col_half:not(.right) {padding-left: 100px;}*/
-    /*.responsive[class*="usp_"].usp_0204 .col_half:not(.right) {padding-left: 0;}*/
-
-
-    .responsive video {display: block;width: 100%;height: auto;}
-    .responsive video.mobile {display: none}
-    .responsive .wrap_video {position: relative; max-width: 1600px; margin: 0 auto;}
-
-    .responsive.usp_0105 .btn_set {
-        position: absolute;
-        left: 61.875%;
-        bottom: 10%;
-        width: 18.625%;
-        height: 7.777777%;
-        z-index: 10;
-    }
-
-    .layer_set {
-        display: none;
-        position: absolute;
-        max-height: 100%;
-        left: 0;
-        top: 0;
-        z-index: 11;
-    }
-
-    .layer_set .btn_close {
-        position: absolute;
-        left: 73%;
-        width: 11.3%;
-        height: 8%;
-        top: 88%;
-    }
-
-    .layer_certi {
-        display: none;
-        position: absolute;
-        max-height: 100%;
-        left: 0;
-        top: 0;
-        z-index: 11;
-        background: #fff;
-        height: 100%;
-        width: 100%;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .layer_certi .btn_close {
-        position: absolute;
-        left: 73%;
-        width: 11.3%;
-        height: 8%;
-        background: red;
-        opacity: 0.5;
-        top: 88%;
-    }
-
-    .layer_306 {
-        display: none;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 11;
-    }
-
-    .layer_306 .btn_close {
-        position: absolute;
-        bottom: 26.7%;
-        left: 56.5%;
-        width: 11.2%;
-        height: 8%;
-        z-index: 10;
-    }
-
-    .responsive.usp_0202 .btn_certi {
-        position: absolute;
-        right: 26%;
-        bottom: 10%;
-        width: 18.625%;
-        height: 7.777777%;
-        z-index: 10;
-    }
-
-    .responsive.usp_0203 .btn_certi {
-        position: absolute;
-        left: 16.375%;
-        bottom: 21.4444%;
-        width: 18.625%;
-        height: 7.777777%;
-        z-index: 10;
-    }
-
-    .responsive.usp_0204 .btn_306 {
-        position: absolute;
-        right: 23.1%;
-        bottom: 9.533333%;
-        width: 18.625%;
-        height: 7.777777%;
-        z-index: 10;
-    }
-}
-
-
-@media only screen and (min-width: 1400px) {
-    .usp_0201 .col_half:not(.right) {padding-left: 256px;}
+    .responsive.sec_tone video {display: block;width: 100%;height: auto;}
+    .responsive.sec_tone video.mobile {display: none}
+    .responsive.sec_tone .wrap_video {position: relative; max-width: 1600px; margin: 0 auto;}
+    .responsive.usp_0105 .btn_set {position: absolute;left: 61.875%;bottom: 10%;width: 18.625%;height: 7.777777%;z-index: 10;}
+    .responsive.sec_tone .layer_set {display: none;position: absolute;max-height: 100%;left: 0;top: 0;z-index: 11;}
+    .responsive.sec_tone .layer_set .btn_close {position: absolute;left: 73%;width: 11.3%;height: 8%;top: 88%;}
+    .responsive.sec_tone .layer_certi, .responsive.sec_tone .layer_app {display: none;position: absolute;max-height: 900px;left: 0;top: 0;z-index: 11;background: #fff;height: 100%;width: 100%;}
+    .responsive.sec_tone .layer_certi .parent, .responsive.sec_tone .layer_app .parent {display: flex;height: 100%;align-items: center;justify-content: center;font-size: 40px;font-weight: bold;}
+    .responsive.sec_tone .layer_certi .btn_close, .responsive.sec_tone .layer_app .btn_close {position: absolute;left: 73%;width: 11.3%;height: 8%;background: red;opacity: 0.5;top: 88%;}
+    .responsive.sec_tone .layer_306, .responsive.sec_tone .layer_connect {display: none;position: absolute;left: 0;top: 0;z-index: 11;}
+    .responsive.sec_tone .layer_306 .btn_close {position: absolute;bottom: 26.7%;left: 56.5%;width: 11.2%;height: 8%;z-index: 10;}
+    .responsive.sec_tone .layer_connect .btn_close {position: absolute;bottom: 10%;left: 43.9%;width: 11.2%;height: 7.6%;z-index: 10;}
+    .responsive.usp_0202 .btn_certi {position: absolute;right: 26%;bottom: 10.11111%;width: 18.625%;height: 3.9%;z-index: 10;}
+    .responsive.usp_0203 .btn_certi {position: absolute;left: 16.375%;bottom: 21.4444%;width: 18.625%;height: 7.777777%;z-index: 10;}
+    .responsive.usp_0204 .btn_306 {position: absolute;left: 16.1%;bottom: 9.533333%;width: 18.625%;height: 7.777777%;z-index: 10;}
+    .responsive.usp_0301 .btn_connect {position: absolute;left: 16.375%;bottom: 24.1444%;width: 18.625%;height: 7.777777%;z-index: 10;}
+    .responsive.usp_0304 .btn_app {position: absolute;left: 16.5%;bottom: 36.833333%;width: 18.625%;height: 10.977777%;z-index: 10;}
 }
 
 @media only screen and (max-width: 767px) {
-
-
-    .responsive video.pc {display: none}
+    .iw_placeholder .iw_component {border: none;}
+    .responsive.sec_tone video.pc {display: none}
+    .responsive.sec_tone .wrap_video {position: relative; max-width: 1600px; margin: 0 auto; font-size: 0;}
     .responsive.sec_tone .img_full img {width: 100%}
-    .responsive.sec_tone * {word-break: keep-all;}
-    .responsive.sec_tone .m_show {display: block;}
-
-    .responsive .title h3 {font-size: 16px; margin-bottom: 13px}
-    .responsive .title h4 {font-size: 16px;}
-    .responsive .title .sub_title {font-size: 27px;}
-    .responsive .sub_copy {font-size: 16px;}
-    .responsive .br_m_hidden {display: none;}
-    .responsive.sec_tone .list_star {font-size: 12px;}
-    .responsive.sec_tone .btn_bg_gray {min-height: 56px; min-width: 250px;font-size: 16px;}
-
-
-    .responsive.usp_0202 {text-align: center;}
-    .responsive.usp_0202 .col_half.right .title:not(.second) {position: absolute; top: 39px; left: 50%; transform: translateX(-50%)}
-    .responsive.usp_0202 .sub_copy {width: 176px; margin: 0 auto 27px;}
-    .responsive.usp_0202 .area_certi {text-align: left; position: relative; min-height: 138px;font-size: 12px;margin: 19px 0 15px;padding: 20px 105px 0 10px;line-height: 1.8;}
-    .responsive.usp_0202 .area_certi img {width: 63.5px; position: absolute; right:0; top:0;}
-
-    /*.responsive.usp_0203 {text-align: center; padding-top: 290px; padding-bottom: 30px;}*/
-    .responsive.usp_0203 h4, .responsive.usp_0203 .sub_copy {text-align: right}
-    .responsive.usp_0203 .list_star {margin: 30px 0;}
-    .responsive.usp_0203 .list_star li {text-align: center}
-    .responsive.usp_0203 .col_half:not(.right) {position: relative; z-index: 10}
-    .responsive.usp_0203 .col_half.right .mediaImg {position: absolute; left:0; top: -202px; width: 360px;}
-
-
-    .responsive.usp_0202 .btn_certi {
-        position: absolute;
-        left: 15.2777%;
-        bottom: 0;
-        width: 69.16666%;
-        height: 6.6468%;
-        z-index: 10;
-    }
-
-    .responsive.usp_0203 .btn_certi {
-        position: absolute;
-        left: 15.2777%;
-        bottom: 4.2%;
-        width: 69.16666%;
-        height: 8.9468%;
-        z-index: 10;
-    }
-
-    .responsive.usp_0204 .btn_306 {
-        position: absolute;
-        left: 15.2777%;
-        bottom: 0;
-        width: 69.16666%;
-        height: 6.9468%;
-        z-index: 10;
-    }
-
-    .responsive .wrap_video {position: relative; max-width: 1600px; margin: 0 auto;}
-
-    .responsive.usp_0105 .btn_set {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 21px;
-        width: 68.8888%;
-        height: 8.777777%;
-        z-index: 10;
-    }
-
-    .layer_set {
-        display: none;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 11;
-    }
-
-    .layer_set .btn_close {
-        position: absolute;
-        right: 28.5%;
-        bottom: 2.1%;
-        width: 40.825%;
-        height: 9.2%;
-        z-index: 10;
-    }
-    .layer_set .btn_close img {display: none}
-
-
-    .layer_certi {
-        display: none;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 11;
-        width: 100%;
-        height: 100%;
-        font-size: 20px;
-        line-height: 100%;
-        background: #fff;
-    }
-
-    .layer_certi .btn_close {
-        position: absolute;
-        right: 28.5%;
-        bottom: 2.1%;
-        width: 40.825%;
-        height: 9.2%;
-        z-index: 10;
-        border: 1px solid red;
-    }
-
-    .layer_306 {
-        display: none;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 11;
-    }
-
-    .layer_306 .btn_close {
-        position: absolute;
-        right: 28.5%;
-        bottom: 6.0%;
-        width: 40.825%;
-        height: 9.2%;
-        z-index: 10;
-    }
+    .responsive.usp_0202 .btn_certi {position: absolute;left: 15.2777%;bottom: 0;width: 69.16666%;height: 6.6468%;z-index: 10;}
+    .responsive.usp_0203 .btn_certi {position: absolute;left: 15.2777%;bottom: 4.2%;width: 69.16666%;height: 8.9468%;z-index: 10;}
+    .responsive.usp_0204 .btn_306 {position: absolute;left: 15.2777%;bottom: 8.4%;width: 69.16666%;height: 5.9468%;z-index: 10;}
+    .responsive.usp_0301 .btn_connect {position: absolute;left: 15.9977%;bottom: 8.8%;width: 69.16666%;height: 6.9468%;z-index: 10;}
+    .responsive.usp_0304 .btn_app {position: absolute;left: 15.2777%;bottom: 0;width: 69.16666%;height: 11.7468%;z-index: 10;}
+    .responsive.usp_0105 .btn_set {position: absolute;left: 50%;transform: translateX(-50%);bottom: 21px;width: 68.8888%;height: 8.777777%;z-index: 10;}
+    .responsive.sec_tone .layer_set {display: none;position: absolute;left: 0;top: 0;z-index: 11;}
+    .responsive.sec_tone .layer_set .btn_close {position: absolute;right: 28.5%;bottom: 2.1%;width: 40.825%;height: 9.2%;z-index: 10;}
+    .responsive.sec_tone .layer_set .btn_close img {display: none}
+    .responsive.sec_tone .layer_certi, .responsive.sec_tone .layer_app {display: none;position: absolute;left: 0;top: 0;z-index: 11;width: 100%;height: 100%;font-size: 20px;line-height: 100%;background: #fff;}
+    .responsive.sec_tone .layer_certi .btn_close, .responsive.sec_tone .layer_app .btn_close {position: absolute;right: 28.5%;bottom: 2.1%;width: 40.825%;height: 9.2%;z-index: 10;border: 1px solid red;}
+    .responsive.sec_tone .layer_306, .responsive.sec_tone .layer_connect, .layer_app {display: none;position: absolute;left: 0;bottom: 0;z-index: 11;}
+    .responsive.sec_tone .layer_306 .btn_close {position: absolute;right: 28.5%;bottom: 6.0%;width: 40.825%;height: 9.2%;z-index: 10;}
+    .responsive.sec_tone .layer_connect .btn_close {position: absolute;left: 32.7%;bottom: 3.5%;width: 40.825%;height: 9.2%;z-index: 10;}
 }
-
-.sec_black .title .sub {color: #898989}
-.sec_black .title .strong {color: #fff}
