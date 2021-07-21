@@ -48,29 +48,52 @@
 
     .responsive.usp_0105 .btn_set {
         position: absolute;
-        right: 26%;
+        left: 61.875%;
         bottom: 10%;
         width: 18.625%;
         height: 7.777777%;
-        background: red;
-        opacity: 0.5;
         z-index: 10;
     }
 
     .layer_set {
         display: none;
         position: absolute;
-        left: 50%;
-        top: 2px;
+        max-height: 100%;
+        left: 0;
+        top: 0;
         z-index: 11;
-        transform: translateX(-50%);
     }
 
     .layer_set .btn_close {
         position: absolute;
-        bottom: 38px;
-        left: 50%;
-        margin-left: 368px;
+        left: 73%;
+        width: 11.3%;
+        height: 8%;
+        top: 88%;
+    }
+
+    .layer_certi {
+        display: none;
+        position: absolute;
+        max-height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 11;
+        background: #fff;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .layer_certi .btn_close {
+        position: absolute;
+        left: 73%;
+        width: 11.3%;
+        height: 8%;
+        background: red;
+        opacity: 0.5;
+        top: 88%;
     }
 
     .layer_306 {
@@ -87,8 +110,6 @@
         left: 56.5%;
         width: 11.2%;
         height: 8%;
-        background: red;
-        opacity: 0.5;
         z-index: 10;
     }
 
@@ -98,8 +119,6 @@
         bottom: 10%;
         width: 18.625%;
         height: 7.777777%;
-        background: red;
-        opacity: 0.5;
         z-index: 10;
     }
 
@@ -109,8 +128,6 @@
         bottom: 21.4444%;
         width: 18.625%;
         height: 7.777777%;
-        background: red;
-        opacity: 0.5;
         z-index: 10;
     }
 
@@ -120,8 +137,6 @@
         bottom: 9.533333%;
         width: 18.625%;
         height: 7.777777%;
-        background: red;
-        opacity: 0.5;
         z-index: 10;
     }
 }
@@ -168,8 +183,6 @@
         bottom: 0;
         width: 69.16666%;
         height: 6.6468%;
-        background: red;
-        opacity: 0.5;
         z-index: 10;
     }
 
@@ -179,8 +192,6 @@
         bottom: 4.2%;
         width: 69.16666%;
         height: 8.9468%;
-        background: red;
-        opacity: 0.5;
         z-index: 10;
     }
 
@@ -190,8 +201,6 @@
         bottom: 0;
         width: 69.16666%;
         height: 6.9468%;
-        background: red;
-        opacity: 0.5;
         z-index: 10;
     }
 
@@ -199,12 +208,11 @@
 
     .responsive.usp_0105 .btn_set {
         position: absolute;
-        right: 26%;
-        bottom: 10%;
-        width: 18.625%;
-        height: 7.777777%;
-        background: red;
-        opacity: 0.5;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 21px;
+        width: 68.8888%;
+        height: 8.777777%;
         z-index: 10;
     }
 
@@ -222,11 +230,50 @@
         bottom: 2.1%;
         width: 40.825%;
         height: 9.2%;
-        background: red;
-        opacity: 0.5;
         z-index: 10;
     }
     .layer_set .btn_close img {display: none}
+
+
+    .layer_certi {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 11;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        line-height: 100%;
+        background: #fff;
+    }
+
+    .layer_certi .btn_close {
+        position: absolute;
+        right: 28.5%;
+        bottom: 2.1%;
+        width: 40.825%;
+        height: 9.2%;
+        z-index: 10;
+        border: 1px solid red;
+    }
+
+    .layer_306 {
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 11;
+    }
+
+    .layer_306 .btn_close {
+        position: absolute;
+        right: 28.5%;
+        bottom: 6.0%;
+        width: 40.825%;
+        height: 9.2%;
+        z-index: 10;
+    }
 }
 
 .sec_black .title .sub {color: #898989}

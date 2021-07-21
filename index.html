@@ -52,52 +52,65 @@
                 <div class="iw_placeholder" id="iw_placeholder1605685870705">
                     <!-- start -->
                     <div class="iw_component">
-                        <scction class="responsive usp_0105 sec_video sec_tone">
+                        <!-- HTML 긁어가기 -->
+                        <scction class="responsive usp_0105 sec_video sec_tone"><!-- 생생한 공간감 -->
                             <div class="wrap_video">
-                                <video autoplay="" muted="" loop="" class="pc" playsinline="true" style="background: #000;">
-                                    <source src="https://www.lge.co.kr/kr/images/smartphones/md08046020/usp/usp-MD08046020-18-c32-mp4.mp4" type="video/mp4">
-                                </video>
-
-                                <video autoplay="" muted="" loop="" class="mobile" playsinline="true">
-                                    <source src="https://www.lge.co.kr/kr/images/smartphones/md08046020/usp/usp-MD08046020-1-c32-m-mp4.mp4" type="video/mp4">
-                                </video>
-                                <a href="javascript:;" data-modal-id="layer_set" class="btn_set" aria-label="톤프리 앱으로 설정해보기"></a>
+                                <picture class="mediaImg"><!-- 동영상으로 대체 예정 -->
+                                    <source media="(max-width: 767px)" srcset="./images/usp_0105_dummy_m.png">
+                                    <img alt="" src="./images/usp_0105_dummy.png">
+                                </picture>
+                                <a href="javascript:;" data-modal-id="layer_set" class="btn_set">
+                                    <picture class="mediaImg">
+                                        <source media="(max-width: 767px)" srcset="./images/btn_set_m.png">
+                                        <img alt="톤프리 앱으로 설정해보기" src="./images/btn_set.png">
+                                    </picture>
+                                </a>
 
                                 <div class="layer_set" id="layer_set" data-modal>
                                     <picture class="mediaImg">
                                         <source media="(max-width: 767px)" srcset="./images/img_pop_set_m.png">
-                                        <img alt="" src="./images/img_pop_set.png">
+                                        <img alt="" src="./images/img_pop_set.png" class="img_pop">
                                     </picture>
-                                    <button type="button" class="btn_close btn_layer_close">
-                                        <img alt="닫기" src="./images/btn_layer_close.png">
-                                    </button>
+                                    <button type="button" class="btn_close btn_layer_close" aria-label="닫기"></button>
                                 </div>
                             </div>
                         </scction>
+                        <!-- //HTML 긁어가기 -->
                     </div>
 
                     <div class="iw_component">
-                        <section class="responsive usp_0201 sec_tone">
-                            <!-- (컴포넌트) 메리디안 사운드 -->
-                        </section>
-
-                        <section class="responsive usp_0202 sec_tone">
+                        <!-- HTML 긁어가기 -->
+                        <section class="responsive usp_0202 sec_tone"><!-- UVNano케어 -->
                             <picture class="mediaImg img_full">
                                 <source media="(max-width: 767px)" srcset="./images/img_usp_0202_m.png">
                                 <img alt="" src="./images/img_usp_0202.png">
                             </picture>
-                            <button type="button" class="btn_certi" aria-label="인증서 확인하기"></button>
-                        </section>
+                            <a href="javascript:;" data-modal-id="layer_certi" class="btn_certi" aria-label="인증서 확인하기"></a>
 
-                        <section class="responsive usp_0203 sec_tone">
+                            <div class="layer_certi" id="layer_certi" data-modal>
+                                인증서 팝업 <!-- 인증서 이미지로 대체 예정 -->
+                                <button type="button" class="btn_close btn_layer_close" aria-label="닫기">닫기</button>
+                            </div>
+                        </section>
+                        <!-- //HTML 긁어가기 -->
+
+                        <!-- HTML 긁어가기 -->
+                        <section class="responsive usp_0203 sec_tone"><!-- 안심 실리콘 이어젤 -->
                             <picture class="mediaImg img_full">
                                 <source media="(max-width: 767px)" srcset="./images/img_usp_0203_m.png">
                                 <img alt="" src="./images/img_usp_0203.png">
                             </picture>
-                            <button type="button" class="btn_certi" aria-label="인증서 확인하기"></button>
-                        </section>
+                            <a href="javascript:;" data-modal-id="layer_certi2" class="btn_certi" aria-label="인증서 확인하기"></a>
 
-                        <section class="responsive usp_0204 sec_tone">
+                            <div class="layer_certi" id="layer_certi2" data-modal>
+                                인증서 팝업 <!-- 인증서 이미지로 대체 예정 -->
+                                <button type="button" class="btn_close btn_layer_close" aria-label="닫기">닫기</button>
+                            </div>
+                        </section>
+                        <!-- //HTML 긁어가기 -->
+
+                        <!-- HTML 긁어가기 -->
+                        <section class="responsive usp_0204 sec_tone"><!-- 컴포트핏 디자인 -->
                             <picture class="mediaImg img_full">
                                 <source media="(max-width: 767px)" srcset="./images/img_usp_0204_m.png">
                                 <img alt="" src="./images/img_usp_0204.png">
@@ -106,13 +119,14 @@
 
                             <div class="layer_306" id="layer_306" data-modal>
                                 <picture class="mediaImg">
-                                    <source media="(max-width: 767px)" srcset="./images/img_pop_set_m.png">
+                                    <source media="(max-width: 767px)" srcset="./images/img_pop_306_m.png">
                                     <img alt="" src="./images/img_pop_306.png">
                                 </picture>
                                 <button type="button" class="btn_close btn_layer_close" aria-label="닫기"></button>
                             </div>
-
                         </section>
+                        <!-- //HTML 긁어가기 -->
+
                     </div>
                     <!-- //end -->
                 </div>
@@ -124,10 +138,8 @@
 <script>
     $(document).ready(function() {
         const $layer_close = $('.btn_layer_close');
-
         $('a[data-modal-id]').on('click', function (e) {
             e.preventDefault();
-            // $layer_set.show();
             const modalBox = $(this).attr('data-modal-id');
             $("#" + modalBox).show();
         });
