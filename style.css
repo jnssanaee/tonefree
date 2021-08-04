@@ -1,6 +1,7 @@
 .responsive.sec_tone {max-width: 1600px; margin: 0 auto; position: relative;}
 .responsive.sec_tone img {max-width: 100%}
 .responsive.sec_tone video {width: 100%;}
+.component-wrap {padding: 0;}
 
 
 @media only screen and (min-width: 768px) {
@@ -33,7 +34,7 @@
     .responsive.usp_0202 .btn_certi {position: absolute;left: 15.2777%;bottom: 0;width: 69.16666%;height: 6.6468%;z-index: 10;}
     .responsive.usp_0203 .btn_certi {position: absolute;left: 15.2777%;bottom: 4.2%;width: 69.16666%;height: 8.9468%;z-index: 10;}
     .responsive.usp_0204 .btn_306 {position: absolute;left: 15.2777%;bottom: 8.4%;width: 69.16666%;height: 5.9468%;z-index: 10;}
-    .responsive.usp_0301 .btn_connect {position: absolute;left: 15.9977%;bottom: 27.4%;width: 69.16666%;height: 5.6%;z-index: 10;}
+    .responsive.usp_0301 .btn_connect {position: absolute;left: 15.9977%;bottom: 8.8%;width: 69.16666%;height: 6.9468%;z-index: 10;}
     .responsive.usp_0304 .btn_app {position: absolute;left: 15.2777%;bottom: 0;width: 69.16666%;height: 11.7468%;z-index: 10;}
     .responsive.usp_0105 .btn_set {position: absolute;left: 50%;transform: translateX(-50%);bottom: 21px;width: 68.8888%;height: 8.777777%;z-index: 10;}
     .responsive.sec_tone .layer_set {display: none;position: absolute;left: 0;top: 0;z-index: 11;}
@@ -44,4 +45,7 @@
     .responsive.sec_tone .layer_306, .responsive.sec_tone .layer_connect, .layer_app {display: none;position: absolute;left: 0;bottom: 0;z-index: 11;}
     .responsive.sec_tone .layer_306 .btn_close {position: absolute;right: 28.5%;bottom: 6.0%;width: 40.825%;height: 9.2%;z-index: 10;}
     .responsive.sec_tone .layer_connect .btn_close {position: absolute;left: 32.7%;bottom: 3.5%;width: 40.825%;height: 9.2%;z-index: 10;}
+
+    /* 이전 소스 영향도 제거 */
+    .component-wrap.zero-btm .component.KRC0032 .component-box {padding: 0}
 }
