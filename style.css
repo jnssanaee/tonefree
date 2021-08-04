@@ -11,10 +11,10 @@
     .responsive.usp_0105 .btn_set {position: absolute;left: 61.875%;bottom: 10%;width: 18.625%;height: 7.777777%;z-index: 10;}
     .responsive.sec_tone .layer_set {display: none;position: absolute;max-height: 100%;left: 0;top: 0;z-index: 11;}
     .responsive.sec_tone .layer_set .btn_close {position: absolute;left: 73%;width: 11.3%;height: 8%;top: 88%;}
-    .responsive.sec_tone .layer_certi, .responsive.sec_tone .layer_app {display: none;position: absolute;max-height: 900px;left: 0;top: 0;z-index: 11;background: #fff;height: 100%;width: 100%;}
+    .responsive.sec_tone .layer_certi, .responsive.sec_tone .layer_app {display: none;position: absolute;max-height: 900px;left: 0;bottom: 0;z-index: 11;background: #fff;width: 100%;}
     .responsive.sec_tone .layer_certi .parent, .responsive.sec_tone .layer_app .parent {display: flex;height: 100%;align-items: center;justify-content: center;font-size: 40px;font-weight: bold;}
-    .responsive.sec_tone .layer_certi .btn_close, .responsive.sec_tone .layer_app .btn_close {position: absolute;left: 73%;width: 11.3%;height: 8%;background: red;opacity: 0.5;top: 88%;}
-    .usp_0304.sec_tone .layer_app .btn_close {position: absolute;left: 44%;width: 10.3%;height: 11%;background: transparent;opacity: 0.5;top: 104%;}
+    .responsive.sec_tone .layer_certi .btn_close, .responsive.sec_tone .layer_app .btn_close {position: absolute;left: 73%;width: 11.3%;height: 8%;top: 88%;}
+    .usp_0304.sec_tone .layer_app .btn_close {position: absolute;left: 43.5%;width: 11.3%;height: 8%;background: transparent;bottom: 10%;}
 
     .responsive.sec_tone .layer_306, .responsive.sec_tone .layer_connect {display: none;position: absolute;left: 0;top: 0;z-index: 11;}
     .responsive.sec_tone .layer_306 .btn_close {position: absolute;bottom: 26.7%;left: 56.5%;width: 11.2%;height: 8%;z-index: 10;}
@@ -35,16 +35,18 @@
     .responsive.usp_0203 .btn_certi {position: absolute;left: 15.2777%;bottom: 4.2%;width: 69.16666%;height: 8.9468%;z-index: 10;}
     .responsive.usp_0204 .btn_306 {position: absolute;left: 15.2777%;bottom: 8.4%;width: 69.16666%;height: 5.9468%;z-index: 10;}
     .responsive.usp_0301 .btn_connect {position: absolute;left: 15.9977%;bottom: 8.8%;width: 69.16666%;height: 6.9468%;z-index: 10;}
-    .responsive.usp_0304 .btn_app {position: absolute;left: 15.2777%;bottom: 0;width: 69.16666%;height: 11.7468%;z-index: 10;}
+    .responsive.usp_0304 .btn_app {position: absolute;left: 15.2777%;bottom: 5%;width: 69.16666%;height: 11.7468%;z-index: 10;}
     .responsive.usp_0105 .btn_set {position: absolute;left: 50%;transform: translateX(-50%);bottom: 21px;width: 68.8888%;height: 8.777777%;z-index: 10;}
     .responsive.sec_tone .layer_set {display: none;position: absolute;left: 0;top: 0;z-index: 11;}
     .responsive.sec_tone .layer_set .btn_close {position: absolute;right: 28.5%;bottom: 2.1%;width: 40.825%;height: 9.2%;z-index: 10;}
     .responsive.sec_tone .layer_set .btn_close img {display: none}
-    .responsive.sec_tone .layer_certi, .responsive.sec_tone .layer_app {display: none;position: absolute;left: 0;top: 0;z-index: 11;width: 100%;height: 100%;font-size: 20px;line-height: 100%;background: #fff;}
-    .responsive.sec_tone .layer_certi .btn_close, .responsive.sec_tone .layer_app .btn_close {position: absolute;right: 28.5%;bottom: 2.1%;width: 40.825%;height: 9.2%;z-index: 10;border: 1px solid red;}
+    .responsive.sec_tone .layer_certi, .responsive.sec_tone .layer_app {display: none;position: absolute;left: 0;top: 0;z-index: 11;width: 100%;}
+    .responsive.sec_tone .layer_certi .btn_close {position: absolute;right: 28.5%;bottom: 2.1%;width: 40.825%;height: 9.2%;z-index: 10;}
+    .responsive.sec_tone .layer_app .btn_close {position: absolute;left: 24.5%;bottom: 3.1%;width: 43.825%;height: 9.2%;z-index: 10;}
     .responsive.sec_tone .layer_306, .responsive.sec_tone .layer_connect, .layer_app {display: none;position: absolute;left: 0;bottom: 0;z-index: 11;}
     .responsive.sec_tone .layer_306 .btn_close {position: absolute;right: 28.5%;bottom: 6.0%;width: 40.825%;height: 9.2%;z-index: 10;}
     .responsive.sec_tone .layer_connect .btn_close {position: absolute;left: 32.7%;bottom: 3.5%;width: 40.825%;height: 9.2%;z-index: 10;}
+    .responsive.sec_tone .layer_app {top: auto;bottom: 0;}
 
     /* 이전 소스 영향도 제거 */
     .component-wrap.zero-btm .component.KRC0032 .component-box {padding: 0}
